@@ -1,0 +1,58 @@
+.container_card_book {
+  width: 260px;
+  height: 280px;
+  padding: 10px;
+  margin: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 6px;
+  background: white;
+  border: rgb(255 255 255) 1px solid;
+  box-shadow: 0 0 8px -2px #737eb0;
+}
+
+.container_card_book h2 {
+  text-align: center;
+}
+
+.container_btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container_btns button {
+  padding: 10px 15px;
+  margin: 10px;
+  border: #878383 2px solid;
+  background: #5353fd;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.container_btns button.btn_edit:hover {
+  background: #3131e7;
+}
+
+.container_btns button.btn_delete {
+  background: #fd5386;
+}
+
+.container_btns button.btn_delete:hover {
+  background: #e81957;
+}
+
+.container_titles p {
+  margin: 0;
+}
+
+.container_titles p span {
+  font-weight: bold;
+}
+
+.book_updated {
+  background: #abffee;
+}
