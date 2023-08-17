@@ -4,7 +4,6 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const morgan = require("morgan");
 const rutas = require("./src/rutas/index.js");
-const db = require("./db.js");
 
 // middleware
 app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
@@ -24,11 +23,5 @@ app.use((req, res, next) => {
 
 app.use(cors());
 app.use("/", rutas);
-
-db.conn.sync({ force: false }).then(() => {
-  app.listen(3000, () => {
-    console.log("escuchando en puerto 3000");
-  });
-});
 
 module.exports = app;

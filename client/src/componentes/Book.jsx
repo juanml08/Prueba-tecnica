@@ -14,8 +14,8 @@ export default function Book(props) {
     );
   };
 
-  const processDeleteBook = (bookId) => {
-    fetch(`http://localhost:3000/libros/${bookId}`, {
+  const processDeleteBook = async (bookId) => {
+    await fetch(`http://localhost:3000/libros/${bookId}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
